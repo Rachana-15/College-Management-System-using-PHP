@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <style>
+        header, .mufazmi, footer {
+        padding-left: 300px;
+      }
+  
+      @media only screen and (max-width : 992px) {
+        header, .mufazmi, footer {
+          padding-left: 0;
+        }
+      }
+    </style>
+  <body bgcolor="#ececec">
+    <nav class="brown darken-4">
+        <a href="" class="brand-logo center">Social Learnia</a>
+        <a href="" class="sidenav-trigger" data-target="slide-out"><i class="material-icons">menu</i></a>
+        <a href=""><img src="../images/mufazmi.jpg" class=" dropdown-trigger right responsive-img circle brand-logo " data-target="dropdown" alt="" style=" width: 40px; margin-top: 8px;margin-right: 8px;"></a>
+    </nav>
+    <ul id="slide-out" class="sidenav sidenav-fixed ">
+        <li class="user-view">
+            <div class="background">
+                <img src="../images/sms_bg.jpg" class="responsive-img" alt="">
+            </div>
+            <img src="../images/mufazmi.jpg" alt="" class="responsive-img circle">
+            <span class="name white-text">Umair Farooqui</span>
+            <span class="email white-text">info.mufazmi@gmail.com</span>
+        </li>
+        <li><a href=""><i class="material-icons">dashboard</i> Dashboard</a></li>
+        <li><a href=""><i class="material-icons"></i> Dashboard</a></li>
+        <li><a href=""><i class="material-icons"></i> Dashboard</a></li>
+        <li><a href=""><i class="material-icons"></i> Dashboard</a></li>
+        <li><a href=""><i class="material-icons"></i> Dashboard</a></li>
+        <div class="divider"></div>
+        <li><a href=""><i class="material-icons">logout</i>Logout</a></li>
+        <li><a href=""><i class="material-icons">info</i>About Us</a></li>
+    </ul>
+    <div class="row mufazmi">
+        <div class="col s12 m12 l3">
+            <div class="card-panel z-depth-0" style="padding: 15px">
+                <div class="card-image center">
+                    <img src="../images/mufazmi.jpg" class="circle responsive-img " style="width: 120px; border: 3px solid gray;" alt="">
+                    <h5 class="center">Umair Farooqui</h5>
+                    <div class="divider"></div>
+                    <table >
+                        <thead>
+                            <tr>
+                                <th>Addmission</th>
+                                <td class="blue-text">18001</td>
+                            </tr>
+                            <tr>
+                                <th>Roll Number</th>
+                                <td class="blue-text">101</td>
+                            </tr>
+                            <tr>
+                                <th>class</th>
+                                <td class="blue-text">Class 1</td>
+                            </tr>
+                            <tr>
+                                <th>Section</th>
+                                <td class="blue-text">A</td>
+                            </tr>
+
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l9">
+            <div class="card z-depth-0">
+                <ul class="tabs">
+                    <li class="tab"><a href="#profile" class="">Profile</a></li>
+                    <li class="tab"><a href="#fees" class="">Fees</a></li>
+                    <li class="tab"><a href="#exam" class="">Exam</a></li>
+                    <li class="tab"><a href="#document" class="">Document</a></li>
+                </ul>
+                <div id="profile" class="col s12 white " >
+                        <div class="card"  style="padding-left:10px; padding-right: 10px; ">
+                            <table >
+                                <tbody>  
+                                    <tr>
+                                        <th>Date Of Birth</th>
+                                        <td>15/11/2001</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Category</th>
+                                        <td>
+                                            General  
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mobile Number</th>
+                                        <td>8233366613</td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <th>Religion</th>
+                                        <td>Hindu</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email</th>
+                                        <td>rachanasingh4888@gmail.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card"  style="padding-left:10px; padding-right: 10px; ">
+                            <div class="left">
+                                <h5>Address</h5>
+                            </div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Current Address</th>
+                                        <td>Salt Lake, Kolkata -700091 </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Permanent Address</th>
+                                        <td>Gola Road, Patna India-800012</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                </div>
+                <div id="fees" class="col s12">Please wait, Will get updated soon!</div>
+                <div id="exam" class="col s12">Please wait, Will get updated soon!</div>
+                <div id="document" class="col s12">will be included soon!</div> 
+            
+            </div>
+        </div>
+    </div>
+
+    <!-- right sidenav's profile pic dropdown -->
+
+    <ul class="dropdown-content" id="dropdown">
+       
+            <li><a href=""><i class="material-icons">logout</i>Logout</a></li>
+       
+    </ul>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.dropdown-trigger').dropdown();
+    $('.tabs').tabs();
+  });
+    </script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
