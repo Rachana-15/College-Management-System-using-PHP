@@ -48,6 +48,7 @@ Student information can be fetched through his/her standard and roll no. on the 
 ![image](https://github.com/Rachana-15/College-Management-System-using-PHP/assets/91749520/bf9d290b-07d3-4fe7-9233-bd8fba0e428f)
 
 Conclusion
+
  -> The application provides appropriate information to users according to the chosen service.
  
  -> The project is designed keeping in view the day-to-day problems faced by a college. 
